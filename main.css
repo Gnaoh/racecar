@@ -1,0 +1,25 @@
+  .playerOne {
+    position: relative;
+    background-color: red;
+    left: 50px;
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+  }
+
+.playerTwo {
+    position: relative;
+    background-color: blue;
+    left: 50px;
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+  }
+
+.container{
+  background:url('http://i.imgur.com/gFLqUqc.jpg') no-repeat 0 0;
+  height:30em;
+  position:relative;
+  width:350%;
+  z-index:10;
+}
