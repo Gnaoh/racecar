@@ -1,25 +1,41 @@
-  .playerOne {
-    position: relative;
-    background-color: red;
-    left: 50px;
-    width: 90px;
-    height: 90px;
-    margin: 5px;
-  }
+body {
+  background:#57595E;
+  height: 100%;
+}
+
+.playerOne {
+  position: relative;
+  left: 50px;
+  width: 90px;
+  height: 80px;
+  margin: 5px;
+  top: 160px;
+}
 
 .playerTwo {
-    position: relative;
-    background-color: blue;
-    left: 50px;
-    width: 90px;
-    height: 90px;
-    margin: 5px;
-  }
+  position: relative;
+  left: 50px;
+  width: 90px;
+  height: 80px;
+  margin: 5px;
+  top: 240px;
+}
 
 .container{
-  background:url('http://i.imgur.com/gFLqUqc.jpg') no-repeat 0 0;
+  background:url('trackfinal.png') 40%;
   height:30em;
   position:relative;
-  width:350%;
-  z-index:10;
 }
+
+center{
+  position: relative;
+  animation: color-change 1s infinite;
+  font-size: 5em;
+  text-align: center;
+  font-family: "rockwell extra bold";
+}
+
+@keyframes color-change {
+    0% { color:  black; }
+    100% { color:  white}
+  }
