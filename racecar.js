@@ -4,17 +4,13 @@ var playerTwoWin = "";
 $(document).ready(function(){
 
 /*========================================
-          PLAYER ONE SETTINGS
+          PLAYER ANIMATION
 =======================================*/
 
   var functionOne = $('html').keypress(function (e) {
     if (e.keyCode == 97) {
       $(".playerOne").animate({ "left": "+=20px" }, 0 );}
   });
-
-/*========================================
-          PLAYER TWO SETTINGS
-=======================================*/
 
   $('html').keypress(function (e) {
     if (e.keyCode == 108) {
@@ -53,12 +49,3 @@ $(document).ready(function(){
     location.reload();
   });
 })
-
-/*
-$('#right').click(function () {
-    var leftPos = $('div.outer_container').scrollLeft();
-    $("div.outer_container").animate({
-        scrollLeft: leftPos + 100
-    }, 800);
-});
-*/
