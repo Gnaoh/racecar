@@ -48,6 +48,12 @@ center {
     border: solid 1px black;
 }
 
+p {
+  float: right;
+  display: inline-block;
+  font-weight: bold;
+}
+
 /*.start {
   float: right;
   display: inline-block;

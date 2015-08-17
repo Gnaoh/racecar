@@ -7,13 +7,13 @@ $(document).ready(function(){
           PLAYER ANIMATION
 =======================================*/
 
-  var functionOne = $('html').keypress(function (e) {
-    if (e.keyCode == 97) {
+  var functionOne = $('html').keyup(function (e) {
+    if (e.keyCode == 70) {
       $(".playerOne").animate({ "left": "+=20px" }, 0 );}
   });
 
-  $('html').keypress(function (e) {
-    if (e.keyCode == 108) {
+  $('html').keyup(function (e) {
+    if (e.keyCode == 76) {
       $(".playerTwo").animate({ "left": "+=20px" }, 0 );}
   });
 
@@ -21,9 +21,9 @@ $(document).ready(function(){
                 WINNER
 =======================================*/
 
-  $('html').keypress( function(event) {     
+  $('html').keyup( function(event) {     
     var keycode = (event.keyCode ? event.keyCode : event.which);
-      if(keycode == '97'){
+      if(keycode == '70'){
         $('#html').html(playerOneWin++);  
       }
       if (playerOneWin === 64) {
@@ -31,9 +31,9 @@ $(document).ready(function(){
       }
    });
 
-  $('html').keypress( function(event) {     
+  $('html').keyup( function(event) {     
     var keycode = (event.keyCode ? event.keyCode : event.which);
-      if(keycode == '108'){
+      if(keycode == '76'){
         $('#html').html(playerTwoWin++);  
       }
       if (playerTwoWin === 64) {
